@@ -1,0 +1,38 @@
+micronaut:
+  server:
+    port: 9999
+  security:
+    enabled: true
+    authentication: idtoken
+    oauth2:
+      clients:
+        okta:
+          client-id: 0oa8v1lzgmkXIFFv45d7
+          client-secret: 5UyBacTmdUcr6oCLKmpFQjqTSYUwMTFEdG-6pzxQ
+          scopes: openid, profile, email, offline_access
+          audience: api://default
+          openid:
+            issuer: https://dev-66461681.okta.com/oauth2/default
+            redirect-uri: https://localhost:9999/login/oauth2/code/okta
+    endpoints:
+      oauth:
+        enabled: true
+        path: /oauth/access_token
+      logout:
+        get-allowed: true
+    token:
+      jwt:
+        enabled: true
+        claims-validators:
+          issuer: https://dev-66461681.okta.com/oauth2/default
+        signatures:
+          jwks:
+            okta:
+              url :  https://dev-66461681.okta.com/oauth2/default/v1/keys
+
+
+
+
+
+
+

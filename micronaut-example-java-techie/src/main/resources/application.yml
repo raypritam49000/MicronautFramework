@@ -1,0 +1,35 @@
+micronaut:
+  application:
+    name: micronautExampleJavaTechie
+  server:
+    port: 8081
+
+netty:
+  default:
+    allocator:
+      max-order: 3
+      
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/ray
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 1998
+    initial-pool-size: 5
+    maximum-pool-size: 100
+    minimum-idle: 5
+
+jpa:
+  default:
+    entity-scan:
+      packages: 'micronaut.example.java.techie.models'
+    properties:
+      hibernate:
+        dialect: 'org.hibernate.dialect.PostgreSQL10Dialect'
+        hbm2ddl:
+          auto: update
+        show_sql: true
+        format_sql: true
+
+
+

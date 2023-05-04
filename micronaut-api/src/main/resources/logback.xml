@@ -1,0 +1,35 @@
+<configuration>
+
+    <property scope="context" name="env" value="environment" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <withJansi>true</withJansi>
+        <encoder>
+            <pattern>%cyan(%d{HH:mm:ss.SSS}) %highlight(%-5level) %magenta(%logger{36}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="SENTRY" class="io.sentry.logback.SentryAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+    </appender>
+
+    <appender name="ASYNC_SENTRY" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="SENTRY"/>
+        <neverBlock>true</neverBlock>
+    </appender>
+
+
+    <root level="${LEVEL:INFO}">
+        <if condition='"prod".equals("${env}")'>
+            <then>
+                <appender-ref ref="STDOUT" />
+                <appender-ref ref="ASYNC_SENTRY"/>
+            </then>
+            <else>
+                <appender-ref ref="STDOUT" />
+            </else>
+        </if>
+    </root>
+</configuration>

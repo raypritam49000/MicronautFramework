@@ -1,0 +1,40 @@
+micronaut:
+  application:
+    name: micronautJwtCookieRestApiDemo
+  security:
+    endpoints:
+      login:
+        enabled: false
+        path: /api/v1/auth/login
+      logout:
+        enabled: true
+        path: /logout
+    authentication: bearer
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}
+        expiration: 3600 # expiration time in seconds
+
+datasources:
+  default:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 0003pray
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+        format_sql: true
+        hbm2ddl:
+          auto: update
+netty:
+  default:
+    allocator:
+      max-order: 3

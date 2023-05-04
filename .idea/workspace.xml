@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95298a62-46c3-4e83-97fb-00822d4cae7a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/password/encoder/BcryptPasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/password/encoder/PasswordEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/restcontrollers/HomeRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/controllers/HomeRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/restcontrollers/SecuredController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/controllers/SecuredController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/security/AuthenticationProviderUserPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/security/AuthenticationProviderUserPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/security/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/security/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/security/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/security/services/UserAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/java/com/webencyclop/app/services/UserAuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/test/java/com/webencyclop/app/restcontrollers/HomeRestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-2.0-jwt-example/src/test/java/com/webencyclop/app/password/encoder/HomeRestControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micronaut-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micronaut-api/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/micronaut-api">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/micronaut-2.0-jwt-example" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2OrEDBct52WIW3w11sZcvHlz9XH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/pritamray/MyAllPrograms/MicronautFramework"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95298a62-46c3-4e83-97fb-00822d4cae7a" name="Changes" comment="" />
+      <created>1682310179621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682310179621</updated>
+    </task>
+    <servers />
+  </component>
+</project>

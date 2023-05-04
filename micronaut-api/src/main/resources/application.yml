@@ -1,0 +1,52 @@
+micronaut:
+  application:
+    name: micronaut-api
+  io:
+    watch:
+      paths: src/main
+      restart: true
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+---
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/ray
+    username: postgres
+    password: 1998
+    driverClassName: org.postgresql.Driver
+    initial-pool-size: 5
+    maximum-pool-size: 100
+    minimum-idle: 5
+
+---
+jpa:
+  default:
+    packages-to-scan:
+      - 'br.com.rbarbioni.model'
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+        format_sql: true
+---
+metrics:
+  enabled: true
+
+---
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+  prometheus:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+    sensitive: false

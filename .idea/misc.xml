@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/micronaut-2.0-jwt-example/pom.xml" />
+        <option value="$PROJECT_DIR$/micronaut_data_jdbc_project/pom.xml" />
+        <option value="$PROJECT_DIR$/micronaut-example-java-techie/pom.xml" />
+        <option value="$PROJECT_DIR$/micronaut_rest_api_jwt_project/pom.xml" />
+        <option value="$PROJECT_DIR$/micronaut_mongodb_data_rest_api/pom.xml" />
+        <option value="$PROJECT_DIR$/micronaut-jdbc-tempelete-rest-api/pom.xml" />
+        <option value="$PROJECT_DIR$/micronaut_mybatis_rest_api_project/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="20" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

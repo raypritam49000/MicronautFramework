@@ -1,0 +1,22 @@
+micronaut:
+  server:
+    port: 9999
+  application:
+    name: micronaut_mongodb_data_rest_api
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+
+mongodb:
+  uri: mongodb://localhost:27017/test
+

@@ -1,0 +1,45 @@
+micronaut:
+  server:
+    port: 9999
+  application:
+    name: micronaut-2.0-jwt-example
+  security:
+    authentication: bearer
+    endpoints:
+      login:
+        enabled: true
+    intercept-url-map:
+      - pattern: /login/**
+        httpMethod: POST
+        access: permitAll()
+    token:
+      jwt:
+        enabled: true
+        signatures:
+          secret:
+            generator:
+              secret: '"${JWT_GENERATOR_SIGNATURE_SECRET:pleasvChangeThisSecretForANewOne}"'
+
+datasources:
+  default:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 0003pray
+    schema-generate: none
+    dialect: MYSQL
+
+jpa:
+  default:
+    packages-to-scan:
+      - 'com.webencyclop.app.security.entities'
+      - 'com.webencyclop.app.entities'
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+        format_sql: true
+
+jackson:
+  bean-introspection-module: true

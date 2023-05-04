@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="micronaut_jwt_rest_api_project" />
+        <module name="MicronautProject" />
+        <module name="micronaut-example-java-techie" />
+        <module name="micronaut-2.0-jwt-example" />
+        <module name="micronaut_rest_api_jwt_project" />
+        <module name="micronaut_mybatis_rest_api_project" />
+        <module name="micronaut_mongodb_data_rest_api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
